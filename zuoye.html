@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="ds" value=""/>
+	<input type="text" id="as" value=""/>
+	<input type="button" id="cs" value="总和"/>
+</body>
+	<script type="text/javascript">
+	var ds=document.getElementById("ds");
+	var as=document.getElementById("as");
+	var cs=document.getElementById("cs");
+	cs.onclick=function (){
+		var wo=ds.value;
+		var ni=as.value;
+		var zan=Number(wo)+Number(ni);
+		if(isNaN(zan)){
+			alert('不是数字');
+		}else if(wo==''||ni==''){
+			alert('空');
+		}else{
+			alert(zan);
+		}
+	}
+	</script>
+</html>
